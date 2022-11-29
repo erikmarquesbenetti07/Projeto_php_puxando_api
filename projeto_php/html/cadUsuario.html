@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Usuário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body>
+  <center>
+  <form class="form-horizontal" method="post"
+        action="../src/cadUsuario.php">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Usuário</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="usuario"></label>  
+  <div class="col-md-4">
+  <input id="cpf" name="cpf" type="text" placeholder="cpf" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="senha"></label>
+  <div class="col-md-4">
+    <input id="senha" name="senha" type="password" placeholder="senha" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email"></label>  
+  <div class="col-md-4">
+
+  <input id="email" name="email" type="email" placeholder="email" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="bsalvar"></label>
+  <div class="col-md-8">
+    <button id="bsalvar" type="submit" name="bsalvar" class="btn btn-success">Salvar</button>
+
+    <button id="bcancelar" name="bcancelar" class="btn btn-danger">Cancelar</button>
+
+  </div>
+</div>
+
+</fieldset>
+</form>
+    <br>
+    <a href="../index.php" id="blogin" name="blogin" 
+    class="btn btn-warning"> 
+    Voltar p/Login</a>
+
+    </center>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>

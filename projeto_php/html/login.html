@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <script
+      src="https://kit.fontawesome.com/7f335cf7b9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="html/css/login.css">
+    <script src="html/js/script.js"></script>
+  </head>
+
+  <body class="themed">
+    <div class="main">
+      <div id="illustration"></div>
+      <div class="form-container">
+        <div class="theme-selector">
+          <input type="checkbox" id="switch" onchange="onThemeChange()" value="dark"/>
+          <label for="switch">Toggle</label>
+        </div>
+        <div class="form-header">
+          <h3>Welcome to the<br> Eletrônicos shop </h3>
+          <p>Não tem uma conta? <a href="html/cadUsuario.html">Cadastre-se</a></p>
+        </div>
+        <form action="src/login.php" method="post">
+          <input placeholder="CPF" name="cpf" type="number" />
+          <input placeholder="Senha" name="senha" type="password" />
+          <input name="token" type="hidden" value="meutoken">
+          <button type="submit" value="Submit">Continuar</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
